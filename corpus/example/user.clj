@@ -15,7 +15,7 @@
 
 (meta #'get-user)
 
-(s/defn multi :- (s/maybe s/Int)
+(s/defn multi :- (s/maybe s/Uuid)
   ([x :- s/Int] x)
   ([x :- s/Int [a b] :- [s/Int] & more :- [User]] x))
 
