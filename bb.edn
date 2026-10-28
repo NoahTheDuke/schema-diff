@@ -1,0 +1,5 @@
+{:min-bb-version "1.13.219"
+ :paths ["script" "build"]
+ :deps {babashka/fs {:mvn/version "0.5.34"}
+        babashka/process {:mvn/version "0.6.25"}}
+ :tasks {compare {:exec-fn compare/task}}}
